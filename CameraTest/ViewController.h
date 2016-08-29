@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *startSession;
+@property AVCaptureSession * currentSession;
+
+- (IBAction)startSession:(id)sender;
+- (IBAction)endSession:(id)sender;
 
 @end
 
